@@ -5,8 +5,7 @@ L.tileLayer('https://b.tile.opentopomap.org/{z}/{x}/{y}.png	', {
 }).addTo(map);
 
 for (const sommet of sommets) {
-    const m = L.marker([sommet[1], sommet[2]]).addTo(map);
-    m.bindPopup(L.popup().setContent(`<strong>${sommet[6]}</strong> - ${sommet[7]}
-<em>${sommet[8]}</em>`))
+    const m = L.marker([sommet[2], sommet[3]]).addTo(map);
+    m.bindPopup(L.popup().setContent(`<strong>${sommet[9]}</strong> - ${sommet[13]}<br/><em>${sommet[14]}</em>`))
 
 }
