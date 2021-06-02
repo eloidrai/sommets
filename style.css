@@ -1,7 +1,13 @@
+h1 {
+	display: inline-block;
+	background: red;
+	padding: 3px;
+}
+
 body {
     background: yellowgreen;
 }
 
 #mapid { 
-    height: 650px;
+    height: 80vh;
 }
