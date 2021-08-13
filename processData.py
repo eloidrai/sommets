@@ -4,7 +4,7 @@ def convertToGPS(string):
 	positif = string[0] != '-'
 	nbs = string[not positif:]
 	d, m, s = [int(v) for v in nbs.split(':')]
-	return (d + m/60 + s/3600) * (1 if positif else -1)
+	return round((d + m/60 + s/3600) * (1 if positif else -1), 5)
 
 with open("sommets.csv", 'r') as rf, open("sommets.js", 'w') as wf:
 	liste = [*csv.reader(rf)]
